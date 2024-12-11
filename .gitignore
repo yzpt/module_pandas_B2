@@ -1,0 +1,6 @@
+venv*
+key*
+.env*
+
+z_*
+ignore/
