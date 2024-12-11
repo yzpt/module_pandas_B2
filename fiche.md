@@ -28,4 +28,4 @@ Format de l’évaluation :
 * IQR
 * Box-plot
 
-### Appliquer ces compétences sur des cas pratiques (données de santé, données financières, données de vente, etc.)
+### Appliquer ces compétences sur des cas pratiques (données de santé, données financières, données de vente, etc.) 

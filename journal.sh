@@ -44,3 +44,12 @@ jupyter nbconvert --to pdf 4.0.outliers.ipynb && mv 4.0.outliers.pdf pdf/
 # htmls update
 jupyter nbconvert --to html 2.0.gapminder_analysis.ipynb && mv 2.0.gapminder_analysis.html html/
 jupyter nbconvert --to html 4.0.outliers.ipynb && mv 4.0.outliers.html html/
+
+
+gsutil ls gs://yohann-zapart/
+gsutil cp data/structure_pop_2021.csv gs://yohann-zapart/
+# make the file gs://historical-dashboard-yzpt/df_geocoded_nb_1.3_bis.csv public
+gsutil acl ch -u AllUsers:R gs://yohann-zapart/structure_pop_2021.csv
+# url : 
+https://storage.googleapis.com/yohann-zapart/structure_pop_2021.csv
+
