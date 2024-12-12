@@ -1,11 +1,3 @@
-# Page d'acceuil
-
-## Sous-titre
-
-### sous-sous-titre
-
-(Format Markdown)
-
 * [7.0.EDA_template.html](7.0.EDA_template.html)
 * [7.0.EDA_template.ipynb](7.0.EDA_template.ipynb)
   
