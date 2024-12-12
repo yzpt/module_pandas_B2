@@ -61,4 +61,5 @@ jupyter nbconvert --to html 7.0.EDA_template.ipynb && git add . && git commit -m
 jupyter nbconvert --to html 8.0.html_conversion.ipynb
 git add . && git commit -m "update 7.0. & 8.0 + html conversion" && git push
 
+jupyter nbconvert --to html 2.0.gapminder_analysis.ipynb && git add . && git commit -m "update 2.0.gapminder_analysis.html" && git push
 
