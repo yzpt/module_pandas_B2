@@ -7527,7 +7527,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.html"><a href="https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.html">https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.html</a><a class="anchor-link" href="#https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.html">¶</a></h2><h2 id="https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.ipynb"><a href="https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.ipynb">https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.ipynb</a><a class="anchor-link" href="#https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.ipynb">¶</a></h2>
+<h3 id="https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.html"><a href="https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.html">https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.html</a><a class="anchor-link" href="#https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.html">¶</a></h3><h3 id="https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.ipynb"><a href="https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.ipynb">https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.ipynb</a><a class="anchor-link" href="#https://yzpt.github.io/module_pandas_B2/7.0.EDA_template.ipynb">¶</a></h3><h3 id="https://yzpt.github.io/module_pandas_B2/github_pages.mp4"><a href="https://yzpt.github.io/module_pandas_B2/github_pages.mp4">https://yzpt.github.io/module_pandas_B2/github_pages.mp4</a><a class="anchor-link" href="#https://yzpt.github.io/module_pandas_B2/github_pages.mp4">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9910,11 +9910,11 @@ Cette valeur relativement basse (comparée à Spearman) indique que des variatio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">df_clients</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/clients.csv"</span><span class="p">)</span>
+<span class="n">df_clients</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/clients_v2.csv"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9925,7 +9925,7 @@ Cette valeur relativement basse (comparée à Spearman) indique que des variatio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -9935,18 +9935,7 @@ Cette valeur relativement basse (comparée à Spearman) indique que des variatio
 
 <span class="c1"># Combine with the original dataframe</span>
 <span class="n">data_with_encoded_order_method</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_clients</span><span class="p">,</span> <span class="n">order_method_encoded</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="c1"># Select numerical columns for correlation matrix</span>
-<span class="n">correlation_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">order_method_encoded</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">data_with_encoded_order_method</span><span class="p">[</span><span class="n">correlation_columns</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
-
-<span class="c1"># Display the correlation matrix</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">)</span>
-
-<span class="c1"># If you want to specifically focus on the correlation with Age</span>
-<span class="n">age_correlation</span> <span class="o">=</span> <span class="n">correlation_matrix</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Correlation with Age:"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">age_correlation</span><span class="p">)</span>
+<span class="n">data_with_encoded_order_method</span>
 </pre></div>
 </div>
 </div>
@@ -9956,28 +9945,349 @@ Cette valeur relativement basse (comparée à Spearman) indique que des variatio
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>                             Age  OrderMethod_In-store  \
-Age                     1.000000             -0.324847   
-OrderMethod_In-store   -0.324847              1.000000   
-OrderMethod_Mobile App  0.006383             -0.374624   
-OrderMethod_Online      0.287506             -0.424201   
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-                        OrderMethod_Mobile App  OrderMethod_Online  
-Age                                   0.006383            0.287506  
-OrderMethod_In-store                 -0.374624           -0.424201  
-OrderMethod_Mobile App                1.000000           -0.523127  
-OrderMethod_Online                   -0.523127            1.000000  
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-Correlation with Age:
-Age                       1.000000
-OrderMethod_In-store     -0.324847
-OrderMethod_Mobile App    0.006383
-OrderMethod_Online        0.287506
-Name: Age, dtype: float64
-</pre>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>ClientID</th>
+<th>Age</th>
+<th>AnnualIncome</th>
+<th>PurchaseAmount</th>
+<th>PurchaseFrequency</th>
+<th>CustomerSatisfaction</th>
+<th>Region</th>
+<th>Ville</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>Population</th>
+<th>Altitude</th>
+<th>DiscountApplied</th>
+<th>OrderMethod</th>
+<th>PaymentMethod</th>
+<th>ShippingCost</th>
+<th>OrderMethod_In-store</th>
+<th>OrderMethod_Mobile App</th>
+<th>OrderMethod_Online</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Client_5187</td>
+<td>43.0</td>
+<td>17794.395400</td>
+<td>1468.132354</td>
+<td>0.883475</td>
+<td>1.585582</td>
+<td>Cantal</td>
+<td>Vieillespesse</td>
+<td>45.127</td>
+<td>3.152</td>
+<td>251.0</td>
+<td>1023.0</td>
+<td>False</td>
+<td>Online</td>
+<td>PayPal</td>
+<td>14.901314</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Client_33039</td>
+<td>39.0</td>
+<td>12340.486257</td>
+<td>288.867670</td>
+<td>0.885654</td>
+<td>0.543795</td>
+<td>Vienne</td>
+<td>Pouançay</td>
+<td>47.081</td>
+<td>-0.073</td>
+<td>233.0</td>
+<td>54.0</td>
+<td>False</td>
+<td>Online</td>
+<td>PayPal</td>
+<td>5.933829</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Client_26776</td>
+<td>39.0</td>
+<td>21228.799179</td>
+<td>552.326729</td>
+<td>2.148963</td>
+<td>5.538682</td>
+<td>Haut-Rhin</td>
+<td>Kingersheim</td>
+<td>47.790</td>
+<td>7.334</td>
+<td>13178.0</td>
+<td>235.0</td>
+<td>False</td>
+<td>In-store</td>
+<td>Credit Card</td>
+<td>18.380911</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Client_9910</td>
+<td>40.0</td>
+<td>33779.871216</td>
+<td>633.672472</td>
+<td>1.207567</td>
+<td>2.305551</td>
+<td>Eure-et-Loir</td>
+<td>Abondant</td>
+<td>48.785</td>
+<td>1.440</td>
+<td>2427.0</td>
+<td>132.0</td>
+<td>True</td>
+<td>In-store</td>
+<td>Bank Transfer</td>
+<td>12.529953</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Client_5550</td>
+<td>63.0</td>
+<td>22640.184363</td>
+<td>328.579391</td>
+<td>2.883312</td>
+<td>3.556367</td>
+<td>Charente</td>
+<td>Vindelle</td>
+<td>45.720</td>
+<td>0.121</td>
+<td>1062.0</td>
+<td>55.0</td>
+<td>True</td>
+<td>Online</td>
+<td>Credit Card</td>
+<td>17.512980</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>1016</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<th>1017</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<th>1018</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<th>1019</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<th>1020</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>1021 rows × 19 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_clients</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Index(['ClientID', 'Age', 'AnnualIncome', 'PurchaseAmount',
+       'PurchaseFrequency', 'CustomerSatisfaction', 'Region', 'Ville',
+       'Latitude', 'Longitude', 'Population', 'Altitude', 'DiscountApplied',
+       'OrderMethod', 'PaymentMethod', 'ShippingCost'],
+      dtype='object')</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Select numerical columns for correlation matrix</span>
+<span class="n">correlation_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">order_method_encoded</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">data_with_encoded_order_method</span><span class="p">[</span><span class="n">correlation_columns</span><span class="p">]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+
+<span class="c1"># Display the correlation matrix</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">)</span>
+
+<span class="c1"># If you want to specifically focus on the correlation with Age</span>
+<span class="n">age_correlation</span> <span class="o">=</span> <span class="n">correlation_matrix</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Correlation with Age:"</span><span class="p">)</span>
+<span class="n">age_correlation</span>
+</pre></div>
 </div>
 </div>
 </div>
