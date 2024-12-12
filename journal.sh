@@ -47,7 +47,7 @@ jupyter nbconvert --to html 4.0.outliers.ipynb && mv 4.0.outliers.html html/
 jupyter nbconvert --to html 7.0.EDA_template.ipynb && mv 7.0.EDA_template.html .
 
 jupyter nbconvert --to html 7.0.EDA_template.ipynb  && git add . && git commit -m "update 7.0.EDA_template.html" && git push
-jupyter nbconvert --to html 8.0html_conversion.ipynb  && git add . && git commit -m "update 8.0html_conversion.html" && git push
+jupyter nbconvert --to html 8.0.html_conversion.ipynb  && git add . && git commit -m "update 8.0.html_conversion.html" && git push
 
 
 gsutil ls gs://yohann-zapart/
