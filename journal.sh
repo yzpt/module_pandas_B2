@@ -44,6 +44,8 @@ jupyter nbconvert --to pdf 4.0.outliers.ipynb && mv 4.0.outliers.pdf pdf/
 # htmls update
 jupyter nbconvert --to html 2.0.gapminder_analysis.ipynb && mv 2.0.gapminder_analysis.html html/
 jupyter nbconvert --to html 4.0.outliers.ipynb && mv 4.0.outliers.html html/
+jupyter nbconvert --to html 7.0.EDA_template.ipynb && mv 7.0.EDA_template.html .
+
 
 
 gsutil ls gs://yohann-zapart/
