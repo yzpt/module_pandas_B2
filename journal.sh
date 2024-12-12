@@ -57,7 +57,7 @@ https://storage.googleapis.com/yohann-zapart/structure_pop_2021.csv
 
 
 
-jupyter nbconvert --to html 7.0.EDA_template.ipynb  
+jupyter nbconvert --to html 7.0.EDA_template.ipynb && git add . && git commit -m "update 7.0.EDA_template.html" && git push
 jupyter nbconvert --to html 8.0.html_conversion.ipynb
 git add . && git commit -m "update 7.0. & 8.0 + html conversion" && git push
 
