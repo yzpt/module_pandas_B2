@@ -76,4 +76,10 @@ cours:https://realpython.com/numpy-scipy-pandas-correlation-python/
 * https://research-repository.rmit.edu.au/articles/dataset/Datasets_12338_zip/7705127?file=29154447
 
 * https://github.com/aswintechguy/Data-Science-Concepts/tree/main/Machine%20Learning/data
-* 
+
+
+
+
+# EDA
+* https://www.geeksforgeeks.org/exploratory-data-analysis-in-python/
+* https://medium.com/@nomannayeem/mastering-exploratory-data-analysis-eda-a-comprehensive-python-pandas-guide-for-data-insights-c0be7c5b8889
