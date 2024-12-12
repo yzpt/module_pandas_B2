@@ -9925,7 +9925,7 @@ Cette valeur relativement basse (comparée à Spearman) indique que des variatio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -9946,7 +9946,7 @@ Cette valeur relativement basse (comparée à Spearman) indique que des variatio
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10243,10 +10243,10 @@ Cette valeur relativement basse (comparée à Spearman) indique que des variatio
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_clients</span><span class="o">.</span><span class="n">columns</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_with_encoded_order_method</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 </div>
 </div>
@@ -10257,13 +10257,328 @@ Cette valeur relativement basse (comparée à Spearman) indique que des variatio
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Index(['ClientID', 'Age', 'AnnualIncome', 'PurchaseAmount',
        'PurchaseFrequency', 'CustomerSatisfaction', 'Region', 'Ville',
        'Latitude', 'Longitude', 'Population', 'Altitude', 'DiscountApplied',
-       'OrderMethod', 'PaymentMethod', 'ShippingCost'],
+       'OrderMethod', 'PaymentMethod', 'ShippingCost', 'OrderMethod_In-store',
+       'OrderMethod_Mobile App', 'OrderMethod_Online'],
       dtype='object')</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Consigne-:">Consigne :<a class="anchor-link" href="#Consigne-:">¶</a></h2><ul>
+<li>Nettoyer le dataset au regard du subset de colonnes suivant :<ul>
+<li>'ClientID', 'Age', 'OrderMethod'</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_with_encoded_order_method</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>ClientID</th>
+<th>Age</th>
+<th>AnnualIncome</th>
+<th>PurchaseAmount</th>
+<th>PurchaseFrequency</th>
+<th>CustomerSatisfaction</th>
+<th>Region</th>
+<th>Ville</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>Population</th>
+<th>Altitude</th>
+<th>DiscountApplied</th>
+<th>OrderMethod</th>
+<th>PaymentMethod</th>
+<th>ShippingCost</th>
+<th>OrderMethod_In-store</th>
+<th>OrderMethod_Mobile App</th>
+<th>OrderMethod_Online</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Client_5187</td>
+<td>43.0</td>
+<td>17794.395400</td>
+<td>1468.132354</td>
+<td>0.883475</td>
+<td>1.585582</td>
+<td>Cantal</td>
+<td>Vieillespesse</td>
+<td>45.127</td>
+<td>3.152</td>
+<td>251.0</td>
+<td>1023.0</td>
+<td>False</td>
+<td>Online</td>
+<td>PayPal</td>
+<td>14.901314</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Client_33039</td>
+<td>39.0</td>
+<td>12340.486257</td>
+<td>288.867670</td>
+<td>0.885654</td>
+<td>0.543795</td>
+<td>Vienne</td>
+<td>Pouançay</td>
+<td>47.081</td>
+<td>-0.073</td>
+<td>233.0</td>
+<td>54.0</td>
+<td>False</td>
+<td>Online</td>
+<td>PayPal</td>
+<td>5.933829</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Client_26776</td>
+<td>39.0</td>
+<td>21228.799179</td>
+<td>552.326729</td>
+<td>2.148963</td>
+<td>5.538682</td>
+<td>Haut-Rhin</td>
+<td>Kingersheim</td>
+<td>47.790</td>
+<td>7.334</td>
+<td>13178.0</td>
+<td>235.0</td>
+<td>False</td>
+<td>In-store</td>
+<td>Credit Card</td>
+<td>18.380911</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Client_9910</td>
+<td>40.0</td>
+<td>33779.871216</td>
+<td>633.672472</td>
+<td>1.207567</td>
+<td>2.305551</td>
+<td>Eure-et-Loir</td>
+<td>Abondant</td>
+<td>48.785</td>
+<td>1.440</td>
+<td>2427.0</td>
+<td>132.0</td>
+<td>True</td>
+<td>In-store</td>
+<td>Bank Transfer</td>
+<td>12.529953</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Client_5550</td>
+<td>63.0</td>
+<td>22640.184363</td>
+<td>328.579391</td>
+<td>2.883312</td>
+<td>3.556367</td>
+<td>Charente</td>
+<td>Vindelle</td>
+<td>45.720</td>
+<td>0.121</td>
+<td>1062.0</td>
+<td>55.0</td>
+<td>True</td>
+<td>Online</td>
+<td>Credit Card</td>
+<td>17.512980</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Nombre de lignes avant dropna subset (ClientID, Age, OrderMethod) :'</span><span class="p">,</span> <span class="n">data_with_encoded_order_method</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1"># Supprime uniquement si NaN dans clientID, Age, OrderMethod</span>
+<span class="n">data_with_encoded_order_method</span> <span class="o">=</span> <span class="n">data_with_encoded_order_method</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'ClientID'</span><span class="p">,</span> <span class="s1">'Age'</span><span class="p">,</span> <span class="s1">'OrderMethod'</span><span class="p">])</span>  
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Nombre de lignes après dropna subset (ClientID, Age, OrderMethod) :'</span><span class="p">,</span> <span class="n">data_with_encoded_order_method</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Nombre de lignes avant dropna subset (ClientID, Age, OrderMethod) : 1021
+Nombre de lignes après dropna subset (ClientID, Age, OrderMethod) : 998
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_with_encoded_order_method</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Index(['ClientID', 'Age', 'AnnualIncome', 'PurchaseAmount',
+       'PurchaseFrequency', 'CustomerSatisfaction', 'Region', 'Ville',
+       'Latitude', 'Longitude', 'Population', 'Altitude', 'DiscountApplied',
+       'OrderMethod', 'PaymentMethod', 'ShippingCost', 'OrderMethod_In-store',
+       'OrderMethod_Mobile App', 'OrderMethod_Online'],
+      dtype='object')</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">colonnes_quantitatives</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># 'ClientID', </span>
+    <span class="s1">'Age'</span><span class="p">,</span> 
+    <span class="s1">'AnnualIncome'</span><span class="p">,</span> 
+    <span class="s1">'PurchaseAmount'</span><span class="p">,</span>
+    <span class="s1">'PurchaseFrequency'</span><span class="p">,</span> 
+    <span class="s1">'CustomerSatisfaction'</span><span class="p">,</span> 
+    <span class="c1"># 'Region', </span>
+    <span class="c1"># 'Ville',</span>
+    <span class="s1">'Latitude'</span><span class="p">,</span> 
+    <span class="s1">'Longitude'</span><span class="p">,</span> 
+    <span class="s1">'Population'</span><span class="p">,</span> 
+    <span class="s1">'Altitude'</span><span class="p">,</span> 
+    <span class="c1"># 'DiscountApplied',</span>
+    <span class="c1"># 'OrderMethod', </span>
+    <span class="c1"># 'PaymentMethod', </span>
+    <span class="s1">'ShippingCost'</span><span class="p">,</span> 
+    <span class="s1">'OrderMethod_In-store'</span><span class="p">,</span>
+    <span class="s1">'OrderMethod_Mobile App'</span><span class="p">,</span> 
+    <span class="s1">'OrderMethod_Online'</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Calculer-la-matrice-de-corr%C3%A9lation,-puis-l'afficher-avec-une-heatmap">Calculer la matrice de corrélation, puis l'afficher avec une heatmap<a class="anchor-link" href="#Calculer-la-matrice-de-corr%C3%A9lation,-puis-l'afficher-avec-une-heatmap">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 </div>
 </div>
 </div>
