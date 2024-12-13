@@ -21,3 +21,8 @@
 Consigne : Effectuer une analyse simple des données récupérées.
 * Donner un histogramme de l'occupation des parkings de la MEL.
 
+
+### 2. Outliers
+
+* Faire une EDA du dataset [10.0.dataset_heatlth.ipynb](10.0.dataset_heatlth.ipynb) en détectant et éliminant les outliers.
+* Pour ce, s'appuyer sur le notebook [10.1.health_outliers.ipynb](10.1.health_outliers.ipynb)
