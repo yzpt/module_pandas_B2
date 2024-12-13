@@ -3,6 +3,32 @@
 <hr>
 
 # Dataset du devoir surveillé : [11.0.dataset_orders.csv](11.0.dataset_orders.csv)
+
+Effectuer une EDA qui couvre l'ensemble des points : 
+
+```txt
+### Maîtriser la manipulation de données avec Pandas 
+* lecture et écriture de fichiers CSV
+* sélection, filtrage, tri, groupement
+
+### Nettoyer un jeu de données 
+* valeurs manquantes, suppression des doublons, 
+
+### Calculer et interpréter des statistiques descriptives avec Pandas
+* tendance centrale, dispersion, distribution
+
+### Explorer et analyser les relations entre plusieurs variables 
+* créer une matrice de corrélation
+* analyse bi-variée scatter plots
+* réaliser une régression linéaire simple 
+
+### Comprendre comment identifier et traiter les valeurs aberrantes avec Python 
+* méthode des z-scores
+* IQR
+* Box-plot
+```
+
+
 A envoyer par mail à l'adresse **yohann.zapart@gmail.com**, en-tête de sujet : [GEMA_B2]
 
 <hr>
