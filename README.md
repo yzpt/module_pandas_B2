@@ -1,8 +1,9 @@
-# Analyse descriptive avec Pandas
+### Analyse descriptive avec Pandas
 
 <hr>
 
 # Dataset du devoir surveillé : [11.0.dataset_orders.csv](11.0.dataset_orders.csv)
+A envoyer par mail à l'adresse **yohann.zapart@gmail.com**, en-tête de sujet : [GEMA_B2]
 
 <hr>
 
