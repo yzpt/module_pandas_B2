@@ -30,4 +30,18 @@
 ### 2. Outliers
 
 * Faire une EDA du dataset [10.0.dataset_health.csv](10.0.dataset_health.csv) en détectant et éliminant les outliers.
+
 * Pour ce, s'appuyer sur le notebook [10.1.health_outliers.ipynb](10.1.health_outliers.ipynb)
+
+* Autre notebook d'exemples de traitement des outliers: [divers/wine_outliers.ipynb](divers/wine_outliers.ipynb)
+
+
+### 3. S'exercer sur des datasets selectionnés :
+* [amazon_sales](amazon_sales/)
+* [animals](animals/)
+* [reddit_data](reddit_data/)
+* [weather](weather/)
+* [data/iris.csv](data/iris.csv)
+* [data/titanic.csv](data/titanic.csv)
+* [data/winequality.csv](data/winequality.csv)
+  
