@@ -97,7 +97,7 @@ HTML : [12.0.parkings.html](12.0.parkings.html)
 * [data/titanic.csv](data/titanic.csv)
 * [data/winequality.csv](data/winequality.csv)
 
-# Devoir surveillé du Vendrddi 13 à 15:30
+# Devoir surveillé du Vendredi 13 à 15:30
 - Je vais chercher les similitudes entre notebooks !
 
 <hr>
@@ -110,22 +110,23 @@ HTML : [12.0.parkings.html](12.0.parkings.html)
 
 <hr>
 
-# Profils linkeding d'intérêts
-* https://www.linkedin.com/in/florent-j-93716410b/
-  Super ! Contenu technique pertinent et abordable.
+# Profils linkedin d'intérêts
 
-* https://www.linkedin.com/in/benjamin-dubreu-data/
-  Top voice en france, vend une formation au contenu très pertinent. Attention c'est vendeur de rêve.
+https://www.linkedin.com/in/florent-j-93716410b/
+Super ! Contenu technique pertinent et abordable.
+**Abonnez-vous à sa newsletter !, suivez son blog: [https://datacrafting.substack.com/](https://datacrafting.substack.com/)**
 
-* https://www.linkedin.com/in/jeanmilpied/
-  Simple, très intéressant, et plutôt peu cupide.
+https://www.linkedin.com/in/jeanmilpied/
+Simple, très intéressant, et plutôt peu cupide.
 
-* https://www.linkedin.com/in/willis-nana/
-  Plutôt orienté DE
+https://www.linkedin.com/in/willis-nana/
+Plutôt orienté DE
 
-* https://www.linkedin.com/in/natacha-njongwa-yepnga/
-  Orientée Data analyse / stat / ML
+https://www.linkedin.com/in/natacha-njongwa-yepnga/
+Orientée Data analyse / stat / ML
 
-* https://www.linkedin.com/in/gael-penessot
-  Récemment ajouté, me semble bien.
+https://www.linkedin.com/in/gael-penessot
+Récemment ajouté, me semble intéressant
 
+https://www.linkedin.com/in/benjamin-dubreu-data/
+Top voice en france, **attention c'est vendeur de rêve.** Vend une formation au contenu très pertinent (ne l'achetez pas mais suivez les grandes lignes en recherchant des ressources gratuites et certainement de meilleure qualité que ce qu'il propose)
