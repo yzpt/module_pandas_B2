@@ -16,10 +16,14 @@
 
 * Depuis le fichier excel : [data/parkings.xls](data/parkings.xls)
  
+**Consigne : Effectuer une analyse simple des données récupérées.**
+* Donner un histogramme de l'occupation des parkings de la MEL.
+* Effectuer un classement des 5 parkings les plus occupés.
+* Effectuer une petite visualisation en groupant les parkings par ville.
+
+
 * API url: https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson
 
-Consigne : Effectuer une analyse simple des données récupérées.
-* Donner un histogramme de l'occupation des parkings de la MEL.
 
 
 ### 2. Outliers
