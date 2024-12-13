@@ -14,7 +14,7 @@
 * Etat des parkigns de la MEL:
 * Informations : https://data.lillemetropole.fr/catalogue/dataset/disponibilite-parkings
 
-* Depuis le fichier excel : [data/parkings.xls](data/parkings.xls)
+* Depuis le fichier excel : [data/parking.xls](data/parking.xls)
  
 **Consigne : Effectuer une analyse simple des données récupérées.**
 * Donner un histogramme de l'occupation des parkings de la MEL.
