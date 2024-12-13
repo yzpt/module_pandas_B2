@@ -62,4 +62,7 @@ jupyter nbconvert --to html 8.0.html_conversion.ipynb
 git add . && git commit -m "update 7.0. & 8.0 + html conversion" && git push
 
 jupyter nbconvert --to html 2.0.gapminder_analysis.ipynb && git add . && git commit -m "update 2.0.gapminder_analysis.html" && git push
+# **Notebook : [12.0.parkings.ipynb](12.0.parkings.ipynb)**
+jupyter nbconvert --to html 12.0.parkings.ipynb
+jupyter nbconvert --to html 10.1.health_outliers.ipynb
 

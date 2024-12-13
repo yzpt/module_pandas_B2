@@ -1,14 +1,25 @@
+# Analyse descriptive avec Pandas
+
+* Divers datasets sélectionnés : [data/](data/)
+
+
+
+### Jeudi 12 décembre
+
 * [2.0.gapminder_analysis.html](2.0.gapminder_analysis.html)
 * [2.0.gapminder_analysis.ipynb](2.0.gapminder_analysis.ipynb)
 
 * [7.0.EDA_template.html](7.0.EDA_template.html)
 * [7.0.EDA_template.ipynb](7.0.EDA_template.ipynb)
 
+* [8.0.html_conversion.html](8.0.html_conversion.html)
+* [8.0.html_conversion.ipynb](8.0.html_conversion.ipynb)
+
 * Fichier clients_v2 à analyser : [data/clients_v2.csv](data/clients_v2.csv)
 
 <hr>
 
-### Vendredi 12 décembre.
+### Vendredi 13 décembre
 
 #### 1. Analyser les données des parkings de la MEL
 * Etat des parkigns de la MEL:
@@ -16,6 +27,7 @@
 * Depuis le fichier excel : [data/parking.xls](data/parking.xls)
 
 **Notebook : [12.0.parkings.ipynb](12.0.parkings.ipynb)**
+HTML : [12.0.parkings.html](12.0.parkings.html)
  
 **Consigne : Effectuer une analyse simple des données récupérées.**
 * Donner un histogramme de l'occupation des parkings de la MEL.
@@ -30,7 +42,7 @@
 
 * Faire une EDA du dataset [10.0.dataset_health.csv](10.0.dataset_health.csv) en détectant et éliminant les outliers.
 
-* Pour ce, s'appuyer sur le notebook [10.1.health_outliers.ipynb](10.1.health_outliers.ipynb)
+* Pour ce, s'appuyer sur le notebook [10.1.health_outliers.ipynb](10.1.health_outliers.ipynb) (html: [10.1.health_outliers.html](10.1.health_outliers.html))
 
 * Autre notebook d'exemples de traitement des outliers: [divers/wine_outliers.ipynb](divers/wine_outliers.ipynb)
 
