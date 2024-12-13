@@ -52,4 +52,14 @@ HTML : [12.0.parkings.html](12.0.parkings.html)
 * [data/iris.csv](data/iris.csv)
 * [data/titanic.csv](data/titanic.csv)
 * [data/winequality.csv](data/winequality.csv)
-  
+
+
+
+# Travail à rendre pour vendredi 20 décembre
+- Effectuer une analyse descriptive sur un dataset de données réelles que je vous choisierai.
+- Le datset devra contenir au moins 1000 lignes et 10 colonnes (si ce n'est pas le cas, me demander par mail une homolgation).
+- L'analyse devra contenir l'ensemble des points explicités dasn le fichier [fiche.md](fiche.md)
+
+
+
+
