@@ -13,8 +13,9 @@
 #### 1. Récupérer et analyser des données provenant d'une API au format JSON.
 * Etat des parkigns de la MEL:
 * Informations : https://data.lillemetropole.fr/catalogue/dataset/disponibilite-parkings
-
 * Depuis le fichier excel : [data/parking.xls](data/parking.xls)
+
+**Notebook : [12.0.parkings.ipynb](12.0.parkings.ipynb)**
  
 **Consigne : Effectuer une analyse simple des données récupérées.**
 * Donner un histogramme de l'occupation des parkings de la MEL.
@@ -22,7 +23,8 @@
 * Effectuer une petite visualisation en groupant les parkings par ville.
 
 
-* API url: https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson
+
+* API url: [https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson](https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson)
 
 
 
