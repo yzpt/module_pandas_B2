@@ -54,7 +54,8 @@ cours:https://realpython.com/numpy-scipy-pandas-correlation-python/
 * https://www.datasciencecentral.com/a-plethora-of-data-set-repositories/
 * https://donnees.montreal.ca/dataset/velos-comptage
 * https://www.kaggle.com/datasets/shreyaspj/android-devices-and-mobiles
-
+* https://data.anfr.fr/portail
+* https://data.anfr.fr/visualisation/export/?id=observatoire_2g_3g_4g
 
 
 # Advanced EDA

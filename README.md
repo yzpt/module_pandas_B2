@@ -1,5 +1,10 @@
 # Analyse descriptive avec Pandas
 
+<hr>
+
+# Dataset du devoir surveillé : [11.0.dataset_orders.csv](11.0.dataset_orders.csv)
+
+<hr>
 
 ### Cheatsheets:
 * [Pandas official cheatsheet](Pandas_Cheat_Sheet_official.pdf)
