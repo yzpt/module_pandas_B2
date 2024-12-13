@@ -1,6 +1,21 @@
 # Analyse descriptive avec Pandas
 
 
+### Cheatsheets:
+* [Pandas official cheatsheet](Pandas_Cheat_Sheet_official.pdf)
+* [EDA Cheatsheet](EDA_Cheat_Sheet.pdf)
+* [Datacamp cheatsheet](Pandas_Cheat_Sheet_official.pdf)
+
+
+### Notebooks très bien rédigés :
+Disponibles dans les dossiers 'workshop_notebooks' et 'cookbook':
+* [Stefanie Molin Panda's wokrshop](https://github.com/stefmolin/pandas-workshop)
+
+### Collection de ressources :
+* [ressources.md](ressources.md)
+
+<hr>
+
 ### Jeudi 12 décembre
 
 * [2.0.gapminder_analysis.html](2.0.gapminder_analysis.html)
@@ -53,13 +68,15 @@ HTML : [12.0.parkings.html](12.0.parkings.html)
 * [data/titanic.csv](data/titanic.csv)
 * [data/winequality.csv](data/winequality.csv)
 
+# Devoir surveillé du Vendrddi 13 à 15:30
+- Je vais chercher les similitudes entre notebooks !
 
+<hr>
 
 # Travail à rendre pour vendredi 20 décembre
 - Effectuer une analyse descriptive sur un dataset de données réelles que je vous choisierai.
 - Le datset devra contenir au moins 1000 lignes et 10 colonnes (si ce n'est pas le cas, me demander par mail une homolgation).
 - L'analyse devra contenir l'ensemble des points explicités dasn le fichier [fiche.md](fiche.md)
-
 
 
 
