@@ -10,7 +10,7 @@
 
 ### Vendredi 12 décembre.
 
-#### 1. Récupérer et analyser des données provenant d'une API au format JSON.
+#### 1. Analyser les données des parkings de la MEL
 * Etat des parkigns de la MEL:
 * Informations : [https://data.lillemetropole.fr/catalogue/dataset/disponibilite-parkings](https://data.lillemetropole.fr/catalogue/dataset/disponibilite-parkings)
 * Depuis le fichier excel : [data/parking.xls](data/parking.xls)
