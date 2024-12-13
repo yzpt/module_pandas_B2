@@ -79,4 +79,24 @@ HTML : [12.0.parkings.html](12.0.parkings.html)
 - L'analyse devra contenir l'ensemble des points explicités dasn le fichier [fiche.md](fiche.md)
 
 
+<hr>
+
+# Profils linkeding d'intérêts
+* https://www.linkedin.com/in/florent-j-93716410b/
+  Super ! Contenu technique pertinent et abordable.
+
+* https://www.linkedin.com/in/benjamin-dubreu-data/
+  Top voice en france, vend une formation au contenu très pertinent. Attention c'est vendeur de rêve.
+
+* https://www.linkedin.com/in/jeanmilpied/
+  Simple, très intéressant, et plutôt peu cupide.
+
+* https://www.linkedin.com/in/willis-nana/
+  Plutôt orienté DE
+
+* https://www.linkedin.com/in/natacha-njongwa-yepnga/
+  Orientée Data analyse / stat / ML
+
+* https://www.linkedin.com/in/gael-penessot
+  Récemment ajouté, me semble bien.
 
