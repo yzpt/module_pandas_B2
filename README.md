@@ -14,7 +14,7 @@
 * Etat des parkigns de la MEL:
 * Informations : https://data.lillemetropole.fr/catalogue/dataset/disponibilite-parkings
 
-* Depuis le fichier ecel : [data/parkings.xls](data/parkings.xls)
+* Depuis le fichier excel : [data/parkings.xls](data/parkings.xls)
  
 * API url: https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson
 
