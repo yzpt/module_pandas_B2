@@ -28,5 +28,5 @@
 
 ### 2. Outliers
 
-* Faire une EDA du dataset [10.0.dataset_heatlth.csv](10.0.dataset_heatlth.csv) en détectant et éliminant les outliers.
+* Faire une EDA du dataset [10.0.dataset_health.csv](10.0.dataset_health.csv) en détectant et éliminant les outliers.
 * Pour ce, s'appuyer sur le notebook [10.1.health_outliers.ipynb](10.1.health_outliers.ipynb)
