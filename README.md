@@ -12,7 +12,7 @@
 
 #### 1. Récupérer et analyser des données provenant d'une API au format JSON.
 * Etat des parkigns de la MEL:
-* Informations : https://data.lillemetropole.fr/catalogue/dataset/disponibilite-parkings
+* Informations : [https://data.lillemetropole.fr/catalogue/dataset/disponibilite-parkings](https://data.lillemetropole.fr/catalogue/dataset/disponibilite-parkings)
 * Depuis le fichier excel : [data/parking.xls](data/parking.xls)
 
 **Notebook : [12.0.parkings.ipynb](12.0.parkings.ipynb)**
@@ -22,8 +22,7 @@
 * Effectuer un classement des 5 parkings les plus occupés.
 * Effectuer une petite visualisation en groupant les parkings par ville.
 
-### Optionel, pour la culture/connaissance : récupérer les données en temps réel au format JSON depuis une API.
-* API url: [https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson](https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson)
+**Optionel, pour la culture/connaissance : récupérer les données en temps réel au format JSON depuis une API :**[https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson](https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson)
 
 
 
