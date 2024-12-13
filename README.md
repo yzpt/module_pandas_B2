@@ -4,7 +4,7 @@
 
 # Dataset du devoir surveillé : [11.0.dataset_orders.csv](11.0.dataset_orders.csv)
 
-Effectuer une EDA qui couvre l'ensemble des points : 
+Effectuer une EDA qui couvre l'ensemble des points et l'envoyer par mail à l'adresse **yohann.zapart@gmail.com**, en-tête de sujet : [GEMA_B2]
 
 ```txt
 ### Maîtriser la manipulation de données avec Pandas 
@@ -27,9 +27,6 @@ Effectuer une EDA qui couvre l'ensemble des points :
 * IQR
 * Box-plot
 ```
-
-
-A envoyer par mail à l'adresse **yohann.zapart@gmail.com**, en-tête de sujet : [GEMA_B2]
 
 <hr>
 
