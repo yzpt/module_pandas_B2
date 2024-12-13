@@ -22,8 +22,7 @@
 * Effectuer un classement des 5 parkings les plus occupés.
 * Effectuer une petite visualisation en groupant les parkings par ville.
 
-
-
+### Optionel, pour la culture/connaissance : récupérer les données en temps réel au format JSON depuis une API.
 * API url: [https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson](https://data.lillemetropole.fr/geoserver/wfs?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Aparking&OUTPUTFORMAT=application%2Fjson)
 
 
