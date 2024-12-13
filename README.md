@@ -1,8 +1,5 @@
 # Analyse descriptive avec Pandas
 
-* Divers datasets sélectionnés : [data/](data/)
-
-
 
 ### Jeudi 12 décembre
 
