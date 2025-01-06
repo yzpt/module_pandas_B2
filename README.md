@@ -1,4 +1,6 @@
-### Analyse descriptive avec Pandas
+# Analyse descriptive avec Pandas
+
+## [yzpt.github.io/module_pandas_b2](https://yzpt.github.io/module_pandas_B2)
 
 Attendus du module :
 
@@ -26,7 +28,7 @@ Attendus du module :
 
 <hr>
 
-## Mercredi 11 d&cemebre 2024
+## Mercredi 11 décemebre 2024
 
 ### 1. Cheatsheets:
 * [Pandas official cheatsheet](Pandas_Cheat_Sheet_official.pdf)
@@ -73,7 +75,7 @@ Très utile avec la fonctionanlité github Pages pour afficher des notebooks en 
 
 <hr>
 
-### Vendredi 13 décembre
+## Vendredi 13 décembre
 
 #### 1. Analyser les données des parkings de la MEL
 * Etat des parkigns de la MEL:
@@ -111,15 +113,15 @@ HTML : [12.0.parkings.html](12.0.parkings.html)
 * [data/winequality.csv](data/winequality.csv)
 
 
-### Dataset du devoir surveillé : 
+### 4. Devoir surveillé : 
 - [11.0.dataset_orders.csv](11.0.dataset_orders.csv) : dataset de commandes de produits
 - [11.0.dataset_ogen_orders.ipynb](11.0.dataset_ogen_orders.ipynb) : notebook d'exemple d'analyse (+ script de génération du dataset)
 
-Effectuer une EDA qui couvre l'ensemble des points et l'envoyer par mail à l'adresse **yohann.zapart@gmail.com**, en-tête de sujet : [GEMA_B2]
+Effectuer une EDA qui couvre l'ensemble des attendus de formation (début de cette page) et l'envoyer par mail à l'adresse **yohann.zapart@gmail.com**, en-tête de sujet : [GEMA_B2]
 
 <hr>
 
-# Travail à rendre pour vendredi 20 décembre
+#### Travail à rendre pour vendredi 20 décembre
 - Effectuer une analyse descriptive sur un dataset de données réelles que vous choisierez.
 - Le datset devra contenir au moins 1000 lignes et 10 colonnes (si ce n'est pas le cas, me demander par mail une homolgation).
 - L'analyse devra contenir l'ensemble des points explicités dasn le fichier [fiche.md](fiche.md)

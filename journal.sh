@@ -66,3 +66,12 @@ jupyter nbconvert --to html 2.0.gapminder_analysis.ipynb && git add . && git com
 jupyter nbconvert --to html 12.0.parkings.ipynb
 jupyter nbconvert --to html 10.1.health_outliers.ipynb
 
+
+sudo apt update
+sudo apt-get install texlive-latex-base
+pandoc README.md -o readme.pdf
+# no
+sudo apt install texlive-latex-extra
+export PATH="/Library/TeX/texbin:$PATH"
+pandoc README.md -o readme.pdf
+
