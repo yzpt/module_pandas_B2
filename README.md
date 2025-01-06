@@ -1,30 +1,30 @@
 # Analyse descriptive avec Pandas
 
+![illustration.jpeg](illustration.jpeg)
+
 ## [yzpt.github.io/module_pandas_b2](https://yzpt.github.io/module_pandas_B2)
 
 Attendus du module :
 
-```txt
-# Maîtriser la manipulation de données avec Pandas 
+##### Maîtriser la manipulation de données avec Pandas 
 - lecture et écriture de fichiers CSV
 - sélection, filtrage, tri, groupement
 
-# Nettoyer un jeu de données 
+##### Nettoyer un jeu de données 
 - valeurs manquantes, suppression des doublons, 
 
-# Calculer et interpréter des statistiques descriptives avec Pandas
+##### Calculer et interpréter des statistiques descriptives avec Pandas
 - tendance centrale, dispersion, distribution
 
-# Explorer et analyser les relations entre plusieurs variables 
+##### Explorer et analyser les relations entre plusieurs variables 
 - créer une matrice de corrélation
 - analyse bi-variée scatter plots
 - réaliser une régression linéaire simple 
 
-# Comprendre comment identifier et traiter les valeurs aberrantes avec Python 
+##### Comprendre comment identifier et traiter les valeurs aberrantes avec Python 
 - méthode des z-scores
 - IQR
 - Box-plot
-```
 
 <hr>
 
